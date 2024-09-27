@@ -12,4 +12,6 @@ This branch contains separate MATLAB files that describe the different functions
 11. symdiv =  This function controls the symmetrical division of both populations when 1 A cell--> 2 A cells.
 12. cellmodel_diff_v4 = The model itself, joins all the files and gives you a population of A and B cells on a time frame (Nt), as well as the distribution of cells in space during the same time frame.
 
+To initialize the model, open all the files in a MATLAB folder using the command window put the following command:
+[cellstypeA, cellstypeB, cellstypeC, params] = cellmodel_diff_v4();
     
