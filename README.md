@@ -1,4 +1,6 @@
 This branch contains separate MATLAB files that describe the different functions of the computational model.
+While this branch shows a very flexible model, its reproducibility is still under construction. The validated model can be found in the main branch of this repository.
+
 1. apopQuiec = This function controls the apoptosis of Quiescent cells in the model.
 2. apoptosis = This function controls the apoptosis of Active cells in the model.
 3. asymdiv =  This function controls the asymmetrical division of both populations when 1 A cell--> 1 A cell + 1 B cell.
