@@ -1,3 +1,4 @@
+# Individual functions of the computational and spatial model 
 This branch contains separate MATLAB files that describe the different functions of the computational model.
 While this branch shows a very flexible model, its reproducibility is still under construction. The validated model can be found in the main branch of this repository.
 
