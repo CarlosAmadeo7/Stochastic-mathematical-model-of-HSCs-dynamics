@@ -1,8 +1,7 @@
-# Mathematical-modeling-of-Hematopoietic-stem-cells-
-This repository intends to show my work performed for my Master's thesis where I developed a stochastic model of hematopoietic stem cell dynamics in MATLAB 
+# Stochastic modeling of Hematopoietic stem cells (LT-HSCs and ST-HSCs)
+This repository shows my work performed during my Master's degree where I developed a MATLAB-based stochastic model of hematopoietic stem cell dynamics.
+In this repository, I will show how to use the model on the "Model scripts" and how this model was constructed as well as the biological justification behind it. This model is published in "".
 
-## Objective 
-I aimed to develop a user-friendly computational platform based on a single-cell stochastic model. This platform serves to investigate the dynamics of hematopoietic stem cells (LT-HSCs and ST-HSCs) from a discrete and stochastic perspective, enabling the simulation of these populations’ growth over time.
 
 
 
