@@ -46,15 +46,13 @@ cd /work/alfaroqc/Model_validation
 # Running the script 
 matlab -nodisplay -nosplash -r  "RunInServer($SLURM_ARRAY_TASK_ID), exit "
 ```
+This bash script runs like an array and then generates a data file for each seed. Then in order to visualize the multiple-seed data we created a MATLAB script that takes the files and then calculates the mean and standard deviation.
+The script can be found in the **Plotting_folder** and can be run using the command below:
+```matlab
+Plot_allruns_types_spread(namefolder);
+```
+Where **namefolder** is the folder where all the data from each seed is located 
 
-
-
-
-
-Multiple seeds
-plotting for multiple seeds
-
-Visualization
 Spatial model 
 PRCC analysis 
 
