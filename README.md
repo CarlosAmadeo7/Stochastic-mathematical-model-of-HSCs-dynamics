@@ -70,7 +70,9 @@ To run the **plotdensity1.m** you pick a frame (example: 80) and then run the co
 ```matlab
 plotdensity1(xyA, celltypeA, celltypeB, 80);
 ```
+
 This function will display a heatmap like the one below, where aQ and aD were set up at 0.25:
+
 <img src="https://github.com/user-attachments/assets/f2d56383-1e78-4b44-bd6a-16bb26dac7bd" alt="Active_LT-HSC" width="335"/>
 
 
