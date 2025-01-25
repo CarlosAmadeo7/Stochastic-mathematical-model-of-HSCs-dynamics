@@ -46,28 +46,24 @@ cd /work/alfaroqc/Model_validation
 # Running the script 
 matlab -nodisplay -nosplash -r  "RunInServer($SLURM_ARRAY_TASK_ID), exit "
 ```
-This bash script runs like an array and then generates a data file for each seed. Then in order to visualize the multiple-seed data we created a MATLAB script that takes the files and then calculates the mean and standard deviation.
+This bash script runs like an array and then generates a data file for each seed. Then, to visualize the multiple-seed data we created a MATLAB script that takes the files and then calculates the mean and standard deviation.
 The script can be found in the **Plotting_folder** and can be run using the command below:
 ```matlab
 Plot_allruns_types_spread(namefolder);
 ```
 Where **namefolder** is the folder where all the data from each seed is located 
+An example of a visualization generated for multiple seeds is shown below for both LT-HSCs and ST-HSCs:
+
+<img src="Figures/LT-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="500"/>
+
+
+file:///C:/Users/amade/Documents/UofSC/Bioinformatics/Agent_based_models_simulations/Model_A_B/Model_validation_cluster_ouputs/new_LT-HSCs_quiescent_plot.svg
+
+
 
 Spatial model 
 PRCC analysis 
 
-```matlab
-% Example MATLAB Code
-function y = exampleFunction(x)
-    y = x^2 + 5;
-    disp(y);
-end
-```
-Main model 
-Multiple seeds
-Visualization
-Spatial model 
-PRCC analysis 
 
 
 
