@@ -94,7 +94,7 @@ Where:
 2. **output** is the ouput which is the last column of the **dataPRCC_ab_all.mat**. The input in the function would be: *dataPRCCval_a(:,3)* if you want to see the influence on the **Active LT-HSCs**
 3. **titleplot** is the title of the plot.
    
-### License
+## License
 MIT
 
 
