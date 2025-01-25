@@ -17,10 +17,9 @@ After setting up the parameters and time, open the **cellmodel_diff_spaQD.m** an
 ```
 This command will display the total number of LT-HSCs and ST-HSCs per time-step, as well as the number of active, inactive, and quiescent cells. In addition, the coordinates of the spatial configuration are recorded per time step.
 In addition, it will display all the types of cells in a 2-D dimensional space where the y axis is the counts and the x axis is time.
-An example of a visualization plots is displayed below, where the model was run for 80 steps and just one single seed. Both LT-HSCs and ST-HSCs are displayed:
-![Deterministic mRNA and protein abundance over time](https://github.com/user-attachments/assets/b3b53288-615e-4a77-ba84-958ebe70e8e4)
-
-
+An example of a visualization plot is displayed below, where the model was run for 80 steps and just one single seed. Both LT-HSCs and ST-HSCs are displayed:
+![LT-HSC_single_run](https://github.com/user-attachments/assets/ede33970-9ecc-4b18-b577-9fe49eea534c)
+![ST-HSC_single_run](https://github.com/user-attachments/assets/9c09a66c-296a-4ff9-abdb-b9255fe5fab8)
 
 
 
