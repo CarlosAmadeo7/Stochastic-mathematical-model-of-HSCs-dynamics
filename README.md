@@ -75,11 +75,25 @@ To run the **plotdensity1.m** you pick a frame (example: 80) and then run the co
 plotdensity1(xyA, celltypeA, celltypeB, 80);
 ```
 
-This function will display a heatmap like the one below, where aQ and aD were set up at 0.25:
+This function will display a heatmap like the one below, where aQ and aD were set up at 0.25, and we set the function to display the Active LT-HSCs:
 
 <img src="https://github.com/user-attachments/assets/f2d56383-1e78-4b44-bd6a-16bb26dac7bd" alt="Active_LT-HSC" width="400"/>
 
 ### Partial Rank Coefficient Analysis
+PRCC analysis is 
+PRCC analysis is a statistical method used to assess the sensitivity of a model's output to changes in its input parameters, essentially identifying which parameters have the most significant impact on the model's results, especially when dealing with complex systems with many interacting variables. 
+Our PRCC analysis contains an LHS component given by this equation: *n  ≥  k+1 or  n  ≥  k*4/3* where  *k* is the number of parameters included in the LHS. 
+In this repository in the **PRCC folder**, we can find the code associated with running the PRCC analysis and the data containing 10337 LHS combinations: **dataPRCC_ab_all.mat**.
+To generate the PRCC results as bar graphs we need to run the **CalcPRCC_PAV_with_zscores.m** that takes all the combinations, sort the parameters and give a PRCC value accoridng their positive or negative influence. More details can be found in the code as well as the **README.txt** associated with this repository.
+To run the code you type this in the command window of MATLAB:
+``` matlab
+CalcPRCC_PAV_with_zscores(params, output, titleplot);
+```
+Where:
+1. **params** is the parameters that can be found in each column of the **dataPRCC_ab_all.mat**.
+2. **output** is the ouput which is the last column of the **dataPRCC_ab_all.mat**. The input in the function would be : if 
+3. **titleplot** is the title of the plot.
+   
 ### License
 
 
