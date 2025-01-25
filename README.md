@@ -20,8 +20,8 @@ function y = exampleFunction(x)
     y = x^2 + 5;
     disp(y);
 end
-
-Main model 
+```
+#### Main model 
 Multiple seeds
 Visualization
 Spatial model 
