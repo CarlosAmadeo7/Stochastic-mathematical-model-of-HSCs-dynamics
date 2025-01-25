@@ -54,10 +54,10 @@ Plot_allruns_types_spread(namefolder);
 Where **namefolder** is the folder where all the data from each seed is located 
 An example of a visualization generated for multiple seeds is shown below for both LT-HSCs and ST-HSCs:
 
-<img src="Figures/LT-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="500"/>
+<img src="Figures/LT-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="400"/>
+<img src="Figures/ST-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="400"/>
 
 
-file:///C:/Users/amade/Documents/UofSC/Bioinformatics/Agent_based_models_simulations/Model_A_B/Model_validation_cluster_ouputs/new_LT-HSCs_quiescent_plot.svg
 
 
 
