@@ -95,7 +95,7 @@ Where:
 3. **titleplot** is the title of the plot.
    
 ### License
-
+MIT
 
 
 
