@@ -66,6 +66,10 @@ An example of a visualization generated for multiple seeds is shown below for bo
 The stochastic component of the model allows the exploration of the HSCs dynamics in a 2-D spatial domain that mimics the bone marrow environment. 
 The parameters related to the spatial component can be found in the **README.txt**.
 The function **plotdensity1.m** plots the coordinates of LT-HSCs and ST-HSCs at a specific time frame, this will be displayed as a normalized value by the total number of LT-HSCs and ST-HSCs at that time step.
+Two components of the model control the gradient of change:
+1. aQ ( gradient of change in quiescent state)
+2. aD ( gradient of change in the mean division)
+
 To run the **plotdensity1.m** you pick a frame (example: 80) and then run the command:
 ```matlab
 plotdensity1(xyA, celltypeA, celltypeB, 80);
