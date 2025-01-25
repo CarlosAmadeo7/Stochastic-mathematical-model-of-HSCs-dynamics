@@ -79,6 +79,8 @@ This function will display a heatmap like the one below, where aQ and aD were se
 
 <img src="https://github.com/user-attachments/assets/f2d56383-1e78-4b44-bd6a-16bb26dac7bd" alt="Active_LT-HSC" width="400"/>
 
+### Partial Rank Coefficient Analysis
+### License
 
 
 
