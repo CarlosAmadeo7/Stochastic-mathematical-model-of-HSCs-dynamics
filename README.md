@@ -15,7 +15,7 @@ After setting up the parameters and time, open the **cellmodel_diff_spaQD.m** an
 ```matlab
 [cellstypeA, cellstypeB, cellstypeC, params] = cellmodel_diff_spaQD;
 ```
-
+This command will display the total number of LT-HSCs and ST-HSCs per time-step, as well as the number of active, inactive, and quiescent cells. In addition, the coordinates of the spatial configuration are recorded per time step.
 
 
 
