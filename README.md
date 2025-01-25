@@ -21,7 +21,11 @@ function y = exampleFunction(x)
     disp(y);
 end
 
-
+Main model 
+Multiple seeds
+Visualization
+Spatial model 
+PRCC analysis 
 
 
 
