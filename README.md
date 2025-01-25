@@ -84,17 +84,18 @@ PRCC analysis is
 PRCC analysis is a statistical method used to assess the sensitivity of a model's output to changes in its input parameters, essentially identifying which parameters have the most significant impact on the model's results, especially when dealing with complex systems with many interacting variables. 
 Our PRCC analysis contains an LHS component given by this equation: *n  ≥  k+1 or  n  ≥  k*4/3* where  *k* is the number of parameters included in the LHS. 
 In this repository in the **PRCC folder**, we can find the code associated with running the PRCC analysis and the data containing 10337 LHS combinations: **dataPRCC_ab_all.mat**.
-To generate the PRCC results as bar graphs we need to run the **CalcPRCC_PAV_with_zscores.m** that takes all the combinations, sort the parameters and give a PRCC value accoridng their positive or negative influence. More details can be found in the code as well as the **README.txt** associated with this repository.
+To generate the PRCC results as bar graphs we need to run the **CalcPRCC_PAV_with_zscores.m** that takes all the combinations, sorts the parameters, and gives a PRCC value according their positive or negative influence. More details can be found in the code as well as the **README.txt** associated with this repository.
 To run the code you type this in the command window of MATLAB:
 ``` matlab
 CalcPRCC_PAV_with_zscores(params, output, titleplot);
 ```
 Where:
-1. **params** is the parameters that can be found in each column of the **dataPRCC_ab_all.mat**.
-2. **output** is the ouput which is the last column of the **dataPRCC_ab_all.mat**. The input in the function would be : if 
+1. **params** are the parameters found in each column of the **dataPRCC_ab_all.mat**. The input in the function would be: *dataPRCC(:,1:16)*. The parameters are distributed in 46 columns
+2. **output** is the ouput which is the last column of the **dataPRCC_ab_all.mat**. The input in the function would be: *dataPRCCval_a(:,3)* if you want to see the influence on the **Active LT-HSCs**
 3. **titleplot** is the title of the plot.
    
 ### License
+
 
 
 
