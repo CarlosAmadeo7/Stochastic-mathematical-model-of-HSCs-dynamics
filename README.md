@@ -21,7 +21,7 @@ function y = exampleFunction(x)
     disp(y);
 end
 ```
-#### Main model 
+Main model 
 Multiple seeds
 Visualization
 Spatial model 
