@@ -9,7 +9,7 @@ The selection of each division mode is determined stochastically through a Marko
 
 ## Usage
 ### Main model
-The model is located in the file "Model_scripts". Download that file and open it using MATLAB. 
+The model is located in the file **Model_scripts**. Download that file and open it using MATLAB. 
 Out of those files, the **cellmodel_diff_spaQD.m** integrates all the functions and runs the main model based on the parameter setup **setup.m** you established.
 After setting up the parameters and time, open the **cellmodel_diff_spaQD.m** and run this command on the command window:
 ```matlab
@@ -23,13 +23,20 @@ An example of a visualization plot is displayed below, where the model was run f
 <img src="https://github.com/user-attachments/assets/9c09a66c-296a-4ff9-abdb-b9255fe5fab8" alt="ST-HSC single run" width="320"/>
 
 While the model runs a single seed at a time, to test for stochasticity we need to run for multiple seeds. 
-When running for a long period this process can be overwhelming computationally. To solve this we can run for multiple seeds in HPC cluster. 
-In the 
+When running for a long period this process can be overwhelming computationally. To solve this we can run for multiple seeds in a HPC cluster. 
+In the **Model_scripts** from this repository the file **RunInServer.m** is a function that takes the model and runs it for 30 different seeds saving the number of total LT-HSCs and ST-HSCs per time step.
+The **RunInServer.m** file can be run via the command line or by submitting a Bash script. An example of a Bash Script using the **RunInServer.m** can be found below:
+```bash
+[cellstypeA, cellstypeB, cellstypeC, params] = cellmodel_diff_spaQD;
+```
+
 
 
 
 
 Multiple seeds
+plotting for multiple seeds
+
 Visualization
 Spatial model 
 PRCC analysis 
