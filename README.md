@@ -24,8 +24,9 @@ An example of a visualization plot is displayed below, where the model was run f
 
 While the model runs a single seed at a time, to test for stochasticity we need to run for multiple seeds. 
 When running for a long period this process can be overwhelming computationally. To solve this we can run for multiple seeds in a HPC cluster. 
-In the **Model_scripts** from this repository the file **RunInServer.m** is a function that takes the model and runs it for 30 different seeds saving the number of total LT-HSCs and ST-HSCs per time step.
+The file **RunInServer.m** in the **Model_scripts** folder of this repository is a function that takes the model and runs it for 30 different seeds, saving the total number of LT-HSCs and ST-HSCs per time step.
 The **RunInServer.m** file can be run via the command line or by submitting a Bash script. An example of a Bash Script using the **RunInServer.m** can be found below:
+
 ```bash
 [cellstypeA, cellstypeB, cellstypeC, params] = cellmodel_diff_spaQD;
 ```
