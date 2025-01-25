@@ -19,7 +19,7 @@ This command will display the total number of LT-HSCs and ST-HSCs per time-step,
 In addition, it will display all the types of cells in a 2-D dimensional space where the y axis is the counts and the x axis is time.
 An example of a visualization plot is displayed below, where the model was run for 80 steps and just one single seed. Both LT-HSCs and ST-HSCs are displayed:
 
-<img src="https://github.com/user-attachments/assets/ede33970-9ecc-4b18-b577-9fe49eea534c" alt="LT-HSC single run" width="300"/>
+<img src="https://github.com/user-attachments/assets/ede33970-9ecc-4b18-b577-9fe49eea534c" alt="LT-HSC single run" width="400"/>
 <img src="https://github.com/user-attachments/assets/9c09a66c-296a-4ff9-abdb-b9255fe5fab8" alt="ST-HSC single run" width="400"/>
 
 
