@@ -62,6 +62,7 @@ An example of a visualization generated for multiple seeds is shown below for bo
 
 </div>
 
+### Spatial component of the model 
 
 
 Spatial model 
