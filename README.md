@@ -8,7 +8,7 @@ Surviving cells can divide via four distinct modes: symmetric self-renewal, asym
 The selection of each division mode is determined stochastically through a Markov process. This division process continues until LT-HSCs and ST-HSCs reach their respective maximum division limits, at which point they transition to an inactive state. The list below of all the parameters we can find in the model as well as their respective descriptions can be found in the **README.txt** associated with this repository. In addition, the set of parameters can be found in the **setup.m** script.
 
 ## Usage
-Main model 
+### Main model 
 Multiple seeds
 Visualization
 Spatial model 
