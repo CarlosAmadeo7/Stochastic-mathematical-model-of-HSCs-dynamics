@@ -25,7 +25,7 @@ An example of a visualization plot is displayed below, where the model was run f
 While the model runs a single seed at a time, to test for stochasticity we need to run for multiple seeds. 
 When running for a long period this process can be overwhelming computationally. To solve this we can run for multiple seeds in a HPC cluster. 
 The file **RunInServer.m** in the **Model_scripts** folder of this repository is a function that takes the model and runs it for 30 different seeds, saving the total number of LT-HSCs and ST-HSCs per time step.
-The **RunInServer.m** file can be run via the command line or by submitting a Bash script. An example of a Bash Script using the **RunInServer.m**, 16 threads and SLURM can be found below:
+The **RunInServer.m** file can be run via the command line or by submitting a Bash script. An example of a Bash Script using the **RunInServer.m**, 16 threads, and SLURM can be found below:
 
 ```bash
 #!/bin/sh
@@ -70,12 +70,9 @@ To run the **plotdensity1.m** you pick a frame (example: 80) and then run the co
 ```matlab
 plotdensity1(xyA, celltypeA, celltypeB, 80);
 ```
-This function will display a heatmap like the one below:
+This function will display a heatmap like the one below, where aQ and aD were set up at 0.25:
 <img src="https://github.com/user-attachments/assets/f2d56383-1e78-4b44-bd6a-16bb26dac7bd" alt="Active_LT-HSC" width="335"/>
-![80_AA_0 25](https://github.com/user-attachments/assets/f2d56383-1e78-4b44-bd6a-16bb26dac7bd)
 
-Spatial model 
-PRCC analysis 
 
 
 
