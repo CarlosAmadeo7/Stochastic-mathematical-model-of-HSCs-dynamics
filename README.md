@@ -57,8 +57,8 @@ An example of a visualization generated for multiple seeds is shown below for bo
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   
-<img src="Figures/LT-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="320"/>
-<img src="Figures/ST-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="320"/>
+<img src="Figures/LT-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="400"/>
+<img src="Figures/ST-HSCs_multiple_seeds.svg" alt="LT-HSC quiescent plot" width="400"/>
 
 </div>
 
