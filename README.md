@@ -25,10 +25,26 @@ An example of a visualization plot is displayed below, where the model was run f
 While the model runs a single seed at a time, to test for stochasticity we need to run for multiple seeds. 
 When running for a long period this process can be overwhelming computationally. To solve this we can run for multiple seeds in a HPC cluster. 
 The file **RunInServer.m** in the **Model_scripts** folder of this repository is a function that takes the model and runs it for 30 different seeds, saving the total number of LT-HSCs and ST-HSCs per time step.
-The **RunInServer.m** file can be run via the command line or by submitting a Bash script. An example of a Bash Script using the **RunInServer.m** can be found below:
+The **RunInServer.m** file can be run via the command line or by submitting a Bash script. An example of a Bash Script using the **RunInServer.m**, 16 threads and SLURM can be found below:
 
 ```bash
-[cellstypeA, cellstypeB, cellstypeC, params] = cellmodel_diff_spaQD;
+#!/bin/sh
+#SBATCH --job-name=validation
+#SBATCH -n 16
+#SBATCH -N 1
+#SBATCH --output job_%j_%N.out
+#SBATCH --error job_%j_%N.err
+#SBATCH -p defq-48core
+
+# Print this sub-job's task ID
+echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
+
+# Loading module matlab
+module load matlab/R2020a 
+# Directory of files from the model 
+cd /work/alfaroqc/Model_validation
+# Running the script 
+matlab -nodisplay -nosplash -r  "RunInServer($SLURM_ARRAY_TASK_ID), exit "
 ```
 
 
